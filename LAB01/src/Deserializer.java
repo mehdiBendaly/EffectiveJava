@@ -8,7 +8,14 @@ public class Deserializer {
 
 		Person p = null;
 		try {
-			FileInputStream fileIn = new FileInputStream("D:\\person.ser");
+			
+//			PC - Windows		
+//			FileInputStream fileIn = new FileInputStream("D:\\person.ser");
+//			PC - Mac
+			FileInputStream fileIn = new FileInputStream("/Users/mehdi/git/EffectiveJava/LAB01/person.ser");
+
+			
+			
 			ObjectInputStream in = new ObjectInputStream(fileIn);
 			p = (Person) in.readObject();
 			in.close();

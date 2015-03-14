@@ -10,8 +10,6 @@ public class PersonExter implements Externalizable {
 	String lastName;
 	Date birthday;
 	int age;
-	
-	
 
 	public PersonExter() {
 		super();

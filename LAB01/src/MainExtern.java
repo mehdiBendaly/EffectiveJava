@@ -12,7 +12,12 @@ public class MainExtern {
 	public static void main(String[] args) throws ParseException,
 			FileNotFoundException, IOException, ClassNotFoundException {
 
-		FileOutputStream f = new FileOutputStream("D:\\person.ext");
+		// PC - Windows
+		// FileOutputStream f = new FileOutputStream("D:\\person.ext");
+		// PC - Mac
+		FileOutputStream f = new FileOutputStream(
+				"/Users/mehdi/git/EffectiveJava/LAB01/person.ext");
+
 		ObjectOutputStream oos = new ObjectOutputStream(f);
 
 		PersonExter person = new PersonExter("Mehdi", "Ben Daly Hassen",
@@ -24,8 +29,16 @@ public class MainExtern {
 		// read part
 
 		PersonExter p = new PersonExter();
+
+		// PC - Windows
+
+		// ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
+		// "D:\\person.ext"));
+		// PC - Mac
+
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
-				"D:\\person.ext"));
+				"/Users/mehdi/git/EffectiveJava/LAB01/person.ext"));
+
 		p.readExternal(ois);
 
 		System.out.println("After  externalizing person \nFirstname: "

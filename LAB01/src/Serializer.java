@@ -27,7 +27,11 @@ public class Serializer {
 
 		try {
 
-			FileOutputStream fout = new FileOutputStream("D:\\person.ser");
+//			PC - Windows		
+//			FileOutputStream fout = new FileOutputStream("D:\\person.ser");
+//			PC - Mac
+			FileOutputStream fout = new FileOutputStream("/Users/mehdi/git/EffectiveJava/LAB01/person.ser");
+			
 			ObjectOutputStream oos = new ObjectOutputStream(fout);
 			oos.writeObject(person);
 			oos.close();
