@@ -19,7 +19,7 @@ public class ReadUsingBufferReader {
         long endTime = System.currentTimeMillis();
         long time= endTime-startTime;
         
-        System.out.println("The time of the BufferedReader: "+ time);
+        System.out.println("The time of the BufferedReader: "+ time+"Ms");
 
 	}
 

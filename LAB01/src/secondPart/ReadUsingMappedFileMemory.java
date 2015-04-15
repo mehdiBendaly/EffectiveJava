@@ -36,7 +36,7 @@ public class ReadUsingMappedFileMemory {
 		long endTime2 = System.currentTimeMillis();
 		long time2 = endTime2 - startTime2;
 
-		System.out.println("The time of the NIO Memory Mapped: " + time2);
+		System.out.println("The time of the NIO Memory Mapped: " + time2+"Ms");
 	}
 
 }

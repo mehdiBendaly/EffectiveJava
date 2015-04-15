@@ -34,7 +34,7 @@ public class ReadUsingNIO {
 		long endTime1 = System.currentTimeMillis();
 		long time1 = endTime1 - startTime1;
 
-		System.out.println("The time of the BufferedReader: " + time1);
+		System.out.println("The time of the BufferedReader: " + time1+"Ms");
 	}
 
 }
